@@ -50,9 +50,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Rails Recipe App <a name="about-project"></a>
+# 📖 Reatime Serach Box App <a name="about-project"></a>
 
-This **Reatime Serach box App** is a ruby on rails application that allows users to make a realtime search.
+This **Reatime Serach Box App** is a ruby on rails application that allows users to make a realtime search.
 
 ## 📹 Video <a name="video"></a>
 
