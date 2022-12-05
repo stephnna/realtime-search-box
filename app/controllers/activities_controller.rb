@@ -4,14 +4,14 @@ class ActivitiesController < ApplicationController
   # GET /activities or /activities.json
   def index
     @activities = if params[:query].present?
-                    Activity.where('name LIKE ?', "#{params[:query]}%").order("LENGTH(name) DESC").first
+                    Activity.where('name LIKE ?', "#{params[:query]}%").order('LENGTH(name) DESC').first
                   else
                     Activity.all
                   end
 
-    if turbo_frame_request?
-      render partial: 'activities', locals: { activities: activities }    
-    end
+    return unless turbo_frame_request?
+
+    render partial: 'activities', locals: { activities: activities }
   end
 
   # GET /activities/1 or /activities/1.json

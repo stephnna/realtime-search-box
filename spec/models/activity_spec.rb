@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 RSpec.describe Activity, type: :model do
   describe 'validations' do
     subject { Activity.new(name: 'who are you') }
@@ -12,16 +11,16 @@ RSpec.describe Activity, type: :model do
     it 'name should be present' do
       subject.name = nil
       expect(subject).to_not be_valid
-    end 
-    
+    end
+
     it 'should not be too short' do
-      subject.name = "ab"
+      subject.name = 'ab'
       expect(subject).to_not be_valid
     end
-    
+
     it 'should not be too long' do
-      subject.name = "a" * 60
+      subject.name = 'a' * 60
       expect(subject).to_not be_valid
-    end 
+    end
   end
 end

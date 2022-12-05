@@ -13,9 +13,9 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'sprockets-rails'
 
 # Use sqlite3 as the database for Active Record
- gem 'sqlite3', group: :development
- gem 'pg', '1.1', group: :production
- gem 'rails_12factor', group: :production
+gem 'pg', '1.1', group: :production
+gem 'rails_12factor', group: :production
+gem 'sqlite3', group: :development
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -55,8 +55,8 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]  
-  gem 'database_cleaner'  
+  gem 'database_cleaner'
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
 end
 
