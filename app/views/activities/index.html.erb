@@ -1,14 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Activities</h1>
+<h1>Perform realtime search</h1>
+<%=form_with(url: activities_path, method: :get, data: {controller: "search-form", turbo_frame: "activities", turbo_action: "advance"}) do |form|%>
+  <%=form.label :query, "Search by activity name"%>
+    <%=form.text_field :query, data: {action: "input -> search-form#search"}%>
+    <%=form.submit "Search", style: "color: green, background-color: pink"%>
+<%end%>
 
+<h1>Search Analytics</h1>
 <div id="activities">
-  <% @activities.each do |activity| %>
-    <%= render activity %>
-    <p>
-      <%= link_to "Show this activity", activity %>
-    </p>
-  <% end %>
+<%=render "activities", activities: @activities%> 
 </div>
 
-<%= link_to "New activity", new_activity_path %>
+<div class="new-activity">
+<%= link_to "Create new search phrase", new_activity_path %>
+</div>
+
