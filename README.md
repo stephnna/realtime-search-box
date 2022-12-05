@@ -162,8 +162,6 @@ You can deploy this project using:
 
 ## 👥 Author <a name="authors"></a>
 
-### 👤 **Author**
-
 - GitHub: [@stephnna](https://github.com/stephnna)
 - Twitter: [@stephnna](https://twitter.com/stephnna)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephen-ezea/)
