@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+.new-activity {
+  text-align: center;  
+}
