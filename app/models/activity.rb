@@ -1,3 +1,3 @@
 class Activity < ApplicationRecord
-  validates :name, presence: true, length: { in: 6..50 }
+  validates :name, presence: true, length: { in: 3..50 }
 end
