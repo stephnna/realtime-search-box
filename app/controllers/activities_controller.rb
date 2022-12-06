@@ -9,10 +9,12 @@ class ActivitiesController < ApplicationController
                     Activity.all
                   end
 
-    return unless turbo_frame_request?
-
-    render partial: 'activities', locals: { activities: activities }
-  end
+    if turbo_frame_request?
+    render partial: 'activities', locals: { activities: @activities }
+    else
+      render :index  
+    end
+  end 
 
   # GET /activities/1 or /activities/1.json
   def show; end
