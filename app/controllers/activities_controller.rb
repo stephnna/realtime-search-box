@@ -4,7 +4,7 @@ class ActivitiesController < ApplicationController
   # GET /activities or /activities.json
   def index
     @activities = if params[:query.downcase].present?
-                    Activity.where('name LIKE ?', "#{params[:query]}%").order('LENGTH(name) DESC').first
+                    Activity.where('name LIKE ?', "#{params[:query.downcase]}%").order('LENGTH(name) DESC').first
                   else
                     Activity.all
                   end
