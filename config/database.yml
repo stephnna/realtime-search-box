@@ -20,7 +20,9 @@ test:
   <<: *default
   database: db/test.sqlite3
 
- production:
-   <<: *default
-   adapter: postgresql
-   database: db/production.sqlite3
+production:
+  <<: *default
+  url: <%= ENV["DATABASE_URL"]%>
+  database: railwayapp_production
+  username: railwayapp
+  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"]%> 
