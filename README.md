@@ -89,6 +89,12 @@ This projects aim is to complete a test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://realtime-search-box-production.up.railway.app/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -146,9 +152,9 @@ You can also run `RAILS_ENV=test rspec spec/` to run the tests in test mode.
 
 ### Deployment
 
-You can deploy this project using:
+deployed with railway App
 
-- [Heroku](https://heroku.com/)
+- [Railway App](https://railway.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
